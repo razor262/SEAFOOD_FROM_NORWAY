@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif; */
+}
+
+.container{
+    max-width: 1220px; /* если экран широкий - то это максимальная ширина */
+    padding: 0 10px;
+    margin: 0 auto; /* устанавливает контейнер по-центру */
+}
+
+.header__top{
+    display:flex;
+    justify-content: space-between; /* jcsb - набираем и нажимаем Tab */
+    padding-top: 27px; /* pt27 - набираем и нажимаем Tab */
+}
+.logo{
+    margin-left: 16px; /* ml16 - набираем и нажимаем Tab */
+}
+.phone{
+    margin-top: 11px;
+    margin-right: 43px;
+}
+.menu{
+    margin-top: 16px;
+}
+.menu__list{
+    display:flex;
+}
+.menu__item + .menu__item{
+    margin-left: 30px;
+}
+.menu__link{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #001E64;
+    font-size: 18px;
+    line-height: 21px;
+}
+.menu__link:hover{
+    border-bottom: 1px solid #001E64;
+}
